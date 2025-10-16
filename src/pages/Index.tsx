@@ -159,12 +159,12 @@ const Index = () => {
           </div>
 
           <nav className="mt-4 flex gap-4 overflow-x-auto pb-2">
-            <Button variant="ghost" size="sm">Каталог</Button>
-            <Button variant="ghost" size="sm">Ветеринария</Button>
-            <Button variant="ghost" size="sm">Груминг</Button>
-            <Button variant="ghost" size="sm">Акции</Button>
-            <Button variant="ghost" size="sm">Статьи</Button>
-            <Button variant="ghost" size="sm">Контакты</Button>
+            <Button variant="ghost" size="sm" onClick={() => document.getElementById('catalog')?.scrollIntoView({ behavior: 'smooth' })}>Каталог</Button>
+            <Button variant="ghost" size="sm" onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}>Ветеринария</Button>
+            <Button variant="ghost" size="sm" onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}>Груминг</Button>
+            <Button variant="ghost" size="sm" onClick={() => document.getElementById('discounts')?.scrollIntoView({ behavior: 'smooth' })}>Акции</Button>
+            <Button variant="ghost" size="sm" onClick={() => document.getElementById('articles')?.scrollIntoView({ behavior: 'smooth' })}>Статьи</Button>
+            <Button variant="ghost" size="sm" onClick={() => document.getElementById('stores')?.scrollIntoView({ behavior: 'smooth' })}>Контакты</Button>
           </nav>
         </div>
       </header>
@@ -220,6 +220,17 @@ const Index = () => {
 
       <section className="container mx-auto px-4 py-12" id="catalog">
         <h2 className="text-4xl font-bold mb-8">Каталог товаров</h2>
+        
+        <div id="discounts" className="bg-gradient-to-r from-secondary/20 to-primary/20 rounded-2xl p-6 mb-8">
+          <div className="flex items-center justify-between flex-wrap gap-4">
+            <div>
+              <Badge className="mb-2 bg-secondary text-secondary-foreground">Акция недели</Badge>
+              <h3 className="text-2xl font-bold mb-2">Скидки до 30% на корма премиум-класса!</h3>
+              <p className="text-muted-foreground">Только до конца месяца. Успейте купить по выгодной цене!</p>
+            </div>
+            <div className="text-6xl">🎉</div>
+          </div>
+        </div>
         
         <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 mb-8">
           <Button
@@ -392,7 +403,7 @@ const Index = () => {
         </Tabs>
       </section>
 
-      <section className="container mx-auto px-4 py-12">
+      <section className="container mx-auto px-4 py-12" id="articles">
         <h2 className="text-4xl font-bold mb-8">Полезные статьи</h2>
         <div className="grid md:grid-cols-3 gap-6">
           {articles.map((article, idx) => (
@@ -463,7 +474,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="container mx-auto px-4 py-12">
+      <section className="container mx-auto px-4 py-12" id="stores">
         <h2 className="text-4xl font-bold mb-8 text-center">Наши магазины в Новосибирске</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="space-y-4">
