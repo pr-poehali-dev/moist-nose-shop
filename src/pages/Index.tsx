@@ -581,13 +581,25 @@ const Index = () => {
                 </Button>
               </div>
               <p className="text-sm opacity-80 mb-2">Скачайте наше приложение:</p>
-              <div className="flex gap-2">
-                <Button size="sm" variant="outline" className="text-xs">
-                  <Icon name="Apple" size={16} className="mr-1" /> iOS
-                </Button>
-                <Button size="sm" variant="outline" className="text-xs">
-                  <Icon name="Smartphone" size={16} className="mr-1" /> Android
-                </Button>
+              <div className="flex flex-col gap-2">
+                <a href="#" className="block">
+                  <Button size="sm" variant="outline" className="text-xs w-full bg-background/10 hover:bg-background/20 border-background/20">
+                    <Icon name="Apple" size={18} className="mr-2" />
+                    <div className="text-left">
+                      <div className="text-[8px] opacity-70">Загрузите в</div>
+                      <div className="text-xs font-semibold">App Store</div>
+                    </div>
+                  </Button>
+                </a>
+                <a href="#" className="block">
+                  <Button size="sm" variant="outline" className="text-xs w-full bg-background/10 hover:bg-background/20 border-background/20">
+                    <Icon name="Smartphone" size={18} className="mr-2" />
+                    <div className="text-left">
+                      <div className="text-[8px] opacity-70">Доступно в</div>
+                      <div className="text-xs font-semibold">Google Play</div>
+                    </div>
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
