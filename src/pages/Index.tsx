@@ -463,6 +463,72 @@ const Index = () => {
         </div>
       </section>
 
+      <section className="container mx-auto px-4 py-12">
+        <h2 className="text-4xl font-bold mb-8 text-center">Наши магазины в Новосибирске</h2>
+        <div className="grid md:grid-cols-2 gap-8">
+          <div className="space-y-4">
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <Icon name="MapPin" size={24} className="text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-lg mb-2">Дуси Ковальчук, 260</h3>
+                    <p className="text-sm text-muted-foreground mb-2">ТЦ "Сибирский Молл"</p>
+                    <p className="text-sm mb-1">📞 +7 (383) 123-45-67</p>
+                    <p className="text-sm">⏰ Пн-Вс: 9:00 - 21:00</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <Icon name="MapPin" size={24} className="text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-lg mb-2">1905 года, 69</h3>
+                    <p className="text-sm text-muted-foreground mb-2">Рядом с метро</p>
+                    <p className="text-sm mb-1">📞 +7 (383) 123-45-68</p>
+                    <p className="text-sm">⏰ Пн-Вс: 9:00 - 21:00</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="hover:shadow-lg transition-shadow">
+              <CardContent className="p-6">
+                <div className="flex items-start gap-4">
+                  <div className="bg-primary/10 p-3 rounded-lg">
+                    <Icon name="MapPin" size={24} className="text-primary" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-lg mb-2">Шевченко, 34/1</h3>
+                    <p className="text-sm text-muted-foreground mb-2">Левобережный район</p>
+                    <p className="text-sm mb-1">📞 +7 (383) 123-45-69</p>
+                    <p className="text-sm">⏰ Пн-Вс: 9:00 - 21:00</p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="rounded-lg overflow-hidden shadow-lg h-[500px]">
+            <iframe
+              src="https://yandex.ru/map-widget/v1/?um=constructor%3A8c8e3e8e8e8e8e8e8e8e8e8e8e8e8e8e&amp;source=constructor"
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              className="w-full h-full"
+              title="Карта магазинов"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-foreground text-background py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
